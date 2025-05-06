@@ -78,9 +78,9 @@ export default function Intro() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="mx-auto col-span-8 place-self-center text-center"
         >
-          <h1 className="text-center text-4xl font-bold tracking-tight  sm:text-5xl">
+          <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
             {t("name")}
           </h1>
 
@@ -92,15 +92,13 @@ export default function Intro() {
             </span>
             <h2
               id="name"
-              className=" text-center  text-2xl  sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
+              className="text-center text-2xl sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
             >
               <TypeAnimation
                 sequence={[
                   "Back-end Engineer",
                   1000,
                   "Full-stack Engineer",
-                  1000,
-                  "DevOps Engineer",
                   1000,
                 ]}
                 wrapper="span"
@@ -114,7 +112,7 @@ export default function Intro() {
         {activeLocale === "en" && (
           <p>
             My focus is{" "}
-            <span className="italic font-bold">Data Structures and Algorithms</span>.
+            <span className="italic font-bold">building scaling application</span>.
           </p>
         )}
       </motion.h1>
